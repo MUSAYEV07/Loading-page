@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Contact from './pages/Contact/Contact'
 import Layout from './Layout'
+import './App.css'
 
 
 function App() {

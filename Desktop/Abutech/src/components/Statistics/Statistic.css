@@ -1,0 +1,65 @@
+/* statistic.css */
+
+section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+}
+
+
+
+.statistic-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.statistic-card {
+  width: 100px;
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+  border-radius: 12px;
+  text-align: center;
+  padding: 40px 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.count {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a73e8; /* nice blue color */
+}
+
+.statistic-card span {
+  font-size: 2rem;
+  color: #1a73e8;
+  margin-left: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .statistic-container {
+  display: flex;
+  flex-wrap: wrap; /* Bu juda muhim! Qator to‘lsa, keyingi qatorda tushadi */
+  gap: 20px;
+  justify-content: center; /* markazlashtirish */
+}
+
+.statistic-card {
+  flex: 1 1 calc(50% - 20px); /* har bir karta kengligi ~50%, gapni chiqarib tashlash */
+  max-width: 300px; /* katta ekranlarda haddan oshmasligi uchun */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box; /* paddingni kenglikka qo‘shmaslik uchun */
+}
+}
+
+
+
+
+
