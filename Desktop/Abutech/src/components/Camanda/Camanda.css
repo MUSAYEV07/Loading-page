@@ -1,0 +1,125 @@
+.camanda {
+  padding: 80px 0;
+  background: #f8f9fb;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* title */
+
+.comanda-title {
+  text-align: center;
+}
+
+.comanda-title h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.comanda-title p {
+  color: #666;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+/* cards */
+
+.comanda-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.comanda-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.comanda-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.comanda-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.comanda-card h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.comanda-card p {
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* social icons */
+
+.comanda-card div {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.comanda-card div a img {
+  width: 22px;
+  height: 22px;
+  transition: 0.3s;
+}
+
+.comanda-card div a img:hover {
+  transform: scale(1.2);
+}
+
+/* ================= */
+/* RESPONSIVE DESIGN */
+/* ================= */
+
+/* Laptop */
+@media (max-width: 1024px) {
+  .comanda-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .comanda-title h2 {
+    font-size: 30px;
+  }
+
+  .comanda-title p {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .comanda-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .comanda-card {
+    padding: 20px;
+  }
+
+  .comanda-card img {
+    width: 100px;
+    height: 100px;
+  }
+}
