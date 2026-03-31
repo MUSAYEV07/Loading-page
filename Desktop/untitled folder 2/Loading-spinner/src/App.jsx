@@ -1,27 +1,23 @@
-import React from 'react'
-import './App.css'
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false)
-    }, 2000)
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
 
-    return () => clearTimeout(timer)
-  }, [])
+  if (loading) {
+    return <h1>Loading...</h1>;
+  }
 
   return (
     <div>
-      {isLoading ? (
-        <div className="loading-spinner">Loading...</div>
-      ) : (
-        <div>App</div>
-      )}
+      <h1>Sayt ochildi 🚀</h1>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
